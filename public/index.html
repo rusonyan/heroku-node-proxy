@@ -266,6 +266,18 @@
     function $(id) {
       return document.getElementById(id);
     }
+      function IsPC() {
+      var userAgentInfo = navigator.userAgent;
+      var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+      var flag = true;
+      for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }
+      }
+      return flag;
+    }
+    if (!IsPC()) {
+      window.location.href = "m.html";
+    }
 
     // $('unblocker-form').onsubmit = function(){
     //	var url = $('url').value;
@@ -294,26 +306,10 @@
       $('url').focus();
       checkError();
     }
-    var textWrapper = document.querySelector('.ml12');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-    anime.timeline({ loop: true })
-      .add({
-        targets: '.ml12 .letter',
-        translateX: [40, 0],
-        translateZ: 0,
-        opacity: [0, 1],
-        easing: "easeOutExpo",
-        duration: 1200,
-        delay: (el, i) => 500 + 30 * i
-      }).add({
-        targets: '.ml12 .letter',
-        translateX: [0, -30],
-        opacity: [1, 0],
-        easing: "easeInExpo",
-        duration: 1100,
-        delay: (el, i) => 100 + 30 * i
-      });
+    
+    
+    
+    
   </script>
 
 
