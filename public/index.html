@@ -11,7 +11,7 @@
   <link href="./富强民主文明和谐_files/css" rel="stylesheet" type="text/css">
 
   <!-- body font -->
-
+  <link href="https://fonts.font.im/css?family=Cabin+Sketch:700" rel="stylesheet">
   <link rel="shortcut icon" href="https://fuqiangminzhu.herokuapp.com/favicon.ico">
   <style type="text/css">
     /* fonts */
@@ -26,10 +26,16 @@
     }
 
     h2 {
-      font-family: 'Orbitron', sans-serif;
+      font-family: 'Cabin Sketch', cursive;
+      font-size: 35px;
     }
 
-    h3,
+    h3 {
+      font-family: "microsoft yahei light", sans-serif;
+      color: aliceblue;
+      font-size: 12px;
+    }
+
     h4 {
       font-family: 'Cormorant Garamond', serif;
       font-weight: bold;
@@ -45,7 +51,7 @@
 
     /* colors */
     body {
-      background-image: url(https://wx1.sinaimg.cn/large/d877926aly1gg6zvppodvj256o3gghe3.jpg);
+      background-image: url(https://imglf5.lf127.net/img/Y1hwUTZ3TUl5dzRONnJ4aDY1S2VGMFZyRUJGWlBxTzFyWWhEemt2UytGSjFYdWJETk9zazlBPT0.jpg?imageView&thumbnail=3000y1687&type=jpg&quality=96&stripmeta=0&type=jpg);
       background-position: center top;
       background-size: cover;
       color: rgb(0, 0, 0);
@@ -86,10 +92,9 @@
     }
 
     .footer {
-      min-height: 60px;
+      min-height: 30px;
       background-repeat: repeat-x;
       background-position: bottom left;
-      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAA8CAIAAAAfXYiZAAAB+ElEQVR4nO3b11aDQBSF4T2IXWM3lhfxTt//PWKvsTfwIllLEobQZuZsYM4DyFkffyKBRJ2encBPsQmlF9BNHEtvoBul+LBiAEp6idQogK0sRdlUrMYnjwhLUTYVJzZiwQoom4rUxMmjwAoom4pSG8ljzTEmhV/duQucrzExDZKCbFkhpdRP9vuBWFmNk4JUWfOUUt95/2MEymqoFNyXtUAp9VXsusVpWY2WgsuyFimlPstcCzsqqwVScIPVDik4eBkuUUp9VPokaresNknBalnLlFLvNe5u2CqrfVKwVNYKpdRb7Ttm5stqqxSMl7VKKfVq6C6sybLaLQWDZa1RSr0YvbNvpqwuSMFIWeuUUs8WnhbVLas7UqhZVo9SamjtCWR1rF5kcA1jM7T5Ybfi3+6gFKqVtUEp9WT/1lzpI3RWCmXL2qSUenT11KXEcTouheJlbVFKPbh9RlzoaF5qNPllbVNK3Ut8oyXnmF4qObPK2qGUupP7/l3mkb1UevRl7VJK3Qp/p1NXlpfKmumy9iilbgikMFWWl5o9/4t4qdwZvwz3KaWumaQwKstLFZywTyl1xScF8Z+jaIdTqh8hZPsx1iWl1EEEsJXFLAUwlXVBKXWYeE9nWZBfCiRlnVNKHaWuE+TXbIoUxMsaUEodZ1x7Si7bLCkAf1M7eHbSdYGuAAAAAElFTkSuQmCC);
     }
 
     .container {
@@ -114,7 +119,7 @@
     }
 
     .container {
-      width: 600px;
+      width: 650px;
       height: 380px;
       margin-top: 60px;
       margin-bottom: auto;
@@ -145,6 +150,7 @@
     .main,
     .footer {
       padding: 1px 10px 0 10px;
+
     }
 
     #error {
@@ -191,8 +197,11 @@
 
 
     .footer {
-      position: relative;
-      clear: both;
+      position: absolute;
+      left: center;
+
+      top: 910px;
+
     }
 
     .footer p {
@@ -261,12 +270,13 @@
 
     </div>
 
+
   </div>
   <script>
     function $(id) {
       return document.getElementById(id);
     }
-      function IsPC() {
+    function IsPC() {
       var userAgentInfo = navigator.userAgent;
       var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
       var flag = true;
@@ -306,10 +316,10 @@
       $('url').focus();
       checkError();
     }
-    
-    
-    
-    
+
+
+
+
   </script>
 
 
