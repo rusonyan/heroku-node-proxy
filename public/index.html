@@ -27,7 +27,7 @@
 
     h2 {
       font-family: 'microsoft yahei light', cursive;
-      font-size: 35px;
+      font-size: 20px;
       color: white;
     }
 
@@ -40,6 +40,7 @@
     h4 {
       font-family: 'Cormorant Garamond', serif;
       font-weight: bold;
+      font-size: 17px;
       color: white;
     }
 
@@ -52,7 +53,7 @@
 
     /* colors */
     body {
-      background-image: url(https://imglf6.lf127.net/img/SkwvbFhURFh6Z2lxV3V2T0NVQnNwUXV5ZHpER2tzbHlyT0NoM2lDdjVNYkZLWDF6VHBMc1JBPT0.jpg?imageView&thumbnail=1920y1056&type=jpg&quality=96&stripmeta=0&type=jpg);
+      background-image: url(https://imglf6.lf127.net/img/SkwvbFhURFh6Z2lxV3V2T0NVQnNwUXV5ZHpER2tzbHlyT0NoM2lDdjVNYkZLWDF6VHBMc1JBPT0.jpg?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg);
       background-position: center top;
       background-size: cover;
       color: rgb(0, 0, 0);
@@ -147,6 +148,7 @@
       margin-top: 5px;
       margin-bottom: 0;
       color: white;
+      font-size: 18px;
     }
 
     .main,
@@ -176,14 +178,15 @@
     input[type=button],
     input[type=submit],
     input[type=reset] {
-      background-color: #4CAF50;
+      background-color: #66afe9;
       border: none;
       color: white;
       padding: 8px 8px;
       text-decoration: none;
       margin: 4px 2px;
       border-radius: 15px;
-
+      opacity: 0.5;
+      filter: alpha(opacity=0.5);
       cursor: pointer;
     }
 
@@ -194,7 +197,10 @@
       border-radius: 20px;
       font-family: "Microsoft soft";
       padding: 7px 16px;
-      max-width: calc(100% - 12em)
+      max-width: calc(100% - 12em);
+      /* BACKGROUND-COLOR: Transparent; */
+      opacity: 0.3;
+      filter: alpha(opacity=0.3)
     }
 
 
@@ -320,7 +326,10 @@
           $('url').focus();
           checkError();
         }
-
+        var rusona = Math.random();
+        if (rusona <= 0.5) {
+          document.body.style.backgroundImage = "url('https://imglf5.lf127.net/img/SkwvbFhURFh6Z2hTTHg4cFFqVldxdFRTV2o5OXJRRzhPb1lLMU1hZjZsaDJxVVJjYlY1eVBBPT0.jpg?imageView&thumbnail=1920y1080&type=jpg&quality=96&stripmeta=0&type=jpg')"
+        }
 
 
 
